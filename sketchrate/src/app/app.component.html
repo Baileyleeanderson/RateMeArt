@@ -1,0 +1,49 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="wrapper">
+  <div id="background">
+    <div id="header_div">
+      <h1 class="header">Welcome </h1>
+      <h1 class="header">to </h1>
+      <h1 class="header">Sketch </h1>
+      <h1 class="header">Rate! </h1>
+    </div>    
+<!--___________________ upload sketch -->
+  <form (submit)="createSketch()" class="upload_sketch"> 
+    <h2>Upload Sketch</h2>
+    <h3>Artist Name</h3>
+    <input type="text" name="newSketchAdd.artist" [(ngModel)]="newSketchAdd.artist"><br>
+    <h3>SketchUrl</h3>    
+    <input type="text" name="newSketchAdd.sketch" [(ngModel)]="newSketchAdd.sketch"><br><br>
+    <input id="tasksubmit" type="submit" value="Upload Sketch">
+  </form>
+
+<!--___________________ all sketches -->  
+  <div class="allsketches">
+    <div *ngFor="let sketch of sketches">
+      <img (click)="showOnClick(sketch._id)" class="all_imgs" src="{{sketch.sketch}}">
+<!--___________________ rate / comment on sketch -->
+        <form class="rating"(submit)="rateSketch(sketch._id, $event)">
+          <select class="select" name="rating" >
+            <option selected="selected" value="5" >5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+          </select><br>
+          <input class="ratebutton" type="submit" value="Rate!">
+          <input class="comment" type="text" placeholder="Type Your Comment Here" name="comment">
+        </form>
+        <div class="line"></div>
+    </div>
+  </div>
+  <ng-container  *ngIf="showAvg">
+    <h2 class="average_rating">Average Rating: {{avg}}</h2>
+  </ng-container>
+  <div id="comments">
+    <app-comment *ngIf="showSketch" [sketchInfo]="showSketch">
+    </app-comment>
+  </div>
+</div>
+</div>
+
+

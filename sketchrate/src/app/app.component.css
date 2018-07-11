@@ -1,0 +1,122 @@
+#wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: url("http://www.fubiz.net/wp-content/uploads/2015/06/kerbyrosanes-13.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#background{
+    width: 1400px;
+    height:100%;
+    text-align: center;
+    margin-left: 10%;  
+
+}
+#header_div{
+    margin-top: 20px;
+    margin-left: 30%;
+    display: block;
+    width: 1000px;
+    height: 100px;
+}
+.header{
+    text-align: center;
+    color: #f2f2f2;
+    background: #ff4a4a; 
+    font-size: 40px; 
+    line-height: 38px; 
+    font-weight: 700; margin: 0 5px 24px;
+    float: left; 
+    padding: 10px; 
+    margin: 0 5px 24px; 
+    font-family: 'Libre Baskerville', serif;  
+}
+.upload_sketch{
+    display: inline-block;
+    border: black 2px solid;
+    width: 200px;
+    height: 300px;
+    background: rgba(35, 35, 35, 0.3);
+    margin-left: 20px;
+    text-shadow:
+    -1px -1px 0 White,
+    1px -1px 0 White,
+    -1px 1px 0 White,
+    1px 1px 0 White;
+}
+.allsketches{
+    margin-left: 300px;
+    vertical-align: top;
+    display: inline-block;
+    width: 600px;
+    max-height: 700px;
+    overflow-y: scroll;
+    border: 2px black solid;
+    background: rgba(35, 35, 35, 0.3);
+}
+.select{
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+    margin-left: -142px;
+    margin-bottom: 10px;
+}
+.all_imgs{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display:inline-block;
+    width: 30%;
+    border: 4px solid rgb(59, 59, 59);
+}
+.rating{
+    display: inline-block;
+    width: 40%;
+}
+.ratebutton{
+    width: 90px;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 50px;
+    color: rgb(102, 102, 255);
+}
+.comment{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    height: 27px;
+    width: 200px;
+    overflow-y: inherit;
+    vertical-align: bottom;
+    border-radius: 40%;
+}
+.line{
+    margin-top: 20px;
+    text-align: center;
+    width: 700px;
+    border: black 1px solid;
+}
+.average_rating{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 202px;
+    left: 143px;
+    font-size: 40px;
+    text-shadow: -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black, 1.5px 1.5px 0 black;
+    text-decoration: underline;
+}
+#comments{
+     /* display: inline-block;
+    vertical-align: top; */
+    color: black;
+    font-size: 35px;
+    text-shadow:
+    -2px -2px white,
+    2px -2px white,
+    -2px 2px white,
+    2px 2px white
+}

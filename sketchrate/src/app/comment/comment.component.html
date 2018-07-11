@@ -1,0 +1,8 @@
+<div id="showart">
+    <h1 id="artistname">Sketched by {{sketchInfo.artist}}</h1>
+    <img class="showimg"src="{{sketchInfo.sketch}}">
+  <div class="commentdiv" ><br>
+      <h3 *ngFor="let comment of sketchInfo.comments" class="comments">{{comment.comment}}</h3><br>
+  </div>
+
+</div>
